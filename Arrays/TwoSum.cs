@@ -6,31 +6,17 @@ namespace Arrays {
 
   public class TwoSum {
 
-    public int[] GetSum(int[] nums, int target) {
-      int[] res = {0, 0};
-      for (int i = 0; i < nums.Length; i++) {
-        for (int j = i+1; j < nums.Length; j++) {
-          if (nums[i] + nums[j] == target) {
-            return new int[] {i, j};
-          }
+    public int[] Sum(int[] nums, int target) {
+      Dictionary<int, int> seen = new Dictionary<int, int>();
+      for(int i = 0; i < nums.Length; i++) {
+        // if there is a such target where we have seen it's opposite we know where the opposites index is at.
+        if (seen.ContainsKey(nums[i])) {
+          return new int[] { seen.GetValueOrDefault(nums[i]), i };
         }
+        // we add the opposite number and the index of the current
+        seen.TryAdd(target - nums[i], i);
       }
-      var u = new ArrayUtils();
-      u.PrintArray(res);
-      return res;
-    }
-
-    public int[] GetSum2(int[] nums, int target) {
-      // here I have to create a hash table and make one pass but I don't know 
-      // exactly what to do 
-      Dictionary<int, int> hashmap = new Dictionary<int, int>();
-      for (int i = 0; i < nums.Length; i++) {
-        int complement = target - nums[i];
-        if (hashmap.ContainsKey(complement))
-          return new int[] {hashmap[complement], i};
-        hashmap.Add(nums[i], i);
-      }
-      throw new Exception("Error, such solution doesn't exist");
+      return new int[] { 0, 0 };
     }
 
   }

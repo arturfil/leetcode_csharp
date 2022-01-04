@@ -11,13 +11,10 @@ namespace review_leetcode {
 
     static void Main(string[] args) {
       
-      int[][] oranges = new int[][] {
-        new int[] {2,1,1},
-        new int[] {0,1,1},
-        new int[] {1,0,1},
-      };
-      
-
+      TwoSum sum = new TwoSum();
+      int[] test = new int[] {1,1,1,1,1,1,1,1,1,1,1,1,1,7,1,1,1,1,1,4};
+      int[] result =  sum.Sum(test, 11);
+      foreach(int num in result) System.Console.WriteLine(num);
     }
 
   }
