@@ -14,7 +14,7 @@ namespace review_leetcode {
       string[] words = {"flower", "flow", "flight"};
       var lg = new LongestCommonPrefix();
       lg.CommonStr(words);
-      foreach(var word in words) System.Console.WriteLine(word);
+      
     }
 
   }
