@@ -20,3 +20,10 @@ namespace Strings {
   }
 
 }
+
+/*
+  TESTING -> put this code on the Program.cs file
+  int[] nums = {1,2,3,4}
+  ContainsDuplicate dup = new ContainsDuplicate();
+  dup.CheckDuplicate(nums);
+*/
