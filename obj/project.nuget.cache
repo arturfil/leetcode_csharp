@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2mhPbPDhjkf/B4RSdzvi+nzg21Nwol4aC4oJq53BZTHKR69Y07pX8cNBlRsw1yqJ17HU1GQJCBa9zaMZqxUX7A==",
+  "dgSpecHash": "DIxvWKNRfQNuwbBlHjM5nR1Ml1dagw7MPXl9eUdDY275p4TzS9VYZhAVDqJBaTgfJkBRidx1cnz9oM70YVHiig==",
   "success": true,
-  "projectFilePath": "/root/Documents/CS/leetcode/review_leetcode.csproj",
-  "expectedPackageFiles": [
-    "/root/.nuget/packages/microsoft.netcore.app.host.linux-x64/3.1.22/microsoft.netcore.app.host.linux-x64.3.1.22.nupkg.sha512"
-  ],
+  "projectFilePath": "/Users/arturofiliovilla/Documents/CS/leetcode/review_leetcode.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

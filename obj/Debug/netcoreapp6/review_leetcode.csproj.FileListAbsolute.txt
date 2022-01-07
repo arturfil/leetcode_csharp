@@ -1,0 +1,15 @@
+/Users/arturofiliovilla/Documents/CS/leetcode/bin/Debug/netcoreapp6/review_leetcode
+/Users/arturofiliovilla/Documents/CS/leetcode/bin/Debug/netcoreapp6/review_leetcode.deps.json
+/Users/arturofiliovilla/Documents/CS/leetcode/bin/Debug/netcoreapp6/review_leetcode.runtimeconfig.json
+/Users/arturofiliovilla/Documents/CS/leetcode/bin/Debug/netcoreapp6/review_leetcode.dll
+/Users/arturofiliovilla/Documents/CS/leetcode/bin/Debug/netcoreapp6/ref/review_leetcode.dll
+/Users/arturofiliovilla/Documents/CS/leetcode/bin/Debug/netcoreapp6/review_leetcode.pdb
+/Users/arturofiliovilla/Documents/CS/leetcode/obj/Debug/netcoreapp6/review_leetcode.csproj.AssemblyReference.cache
+/Users/arturofiliovilla/Documents/CS/leetcode/obj/Debug/netcoreapp6/review_leetcode.GeneratedMSBuildEditorConfig.editorconfig
+/Users/arturofiliovilla/Documents/CS/leetcode/obj/Debug/netcoreapp6/review_leetcode.AssemblyInfoInputs.cache
+/Users/arturofiliovilla/Documents/CS/leetcode/obj/Debug/netcoreapp6/review_leetcode.AssemblyInfo.cs
+/Users/arturofiliovilla/Documents/CS/leetcode/obj/Debug/netcoreapp6/review_leetcode.csproj.CoreCompileInputs.cache
+/Users/arturofiliovilla/Documents/CS/leetcode/obj/Debug/netcoreapp6/review_leetcode.dll
+/Users/arturofiliovilla/Documents/CS/leetcode/obj/Debug/netcoreapp6/ref/review_leetcode.dll
+/Users/arturofiliovilla/Documents/CS/leetcode/obj/Debug/netcoreapp6/review_leetcode.pdb
+/Users/arturofiliovilla/Documents/CS/leetcode/obj/Debug/netcoreapp6/review_leetcode.genruntimeconfig.cache
