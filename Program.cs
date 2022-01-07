@@ -1,9 +1,4 @@
-﻿using Arrays;
-using Arryas;
-using Graphs;
-using Heap;
-using SlidingWindow;
-using Strings;
+﻿using TwoPointers;
 
 namespace review_leetcode {
 
@@ -11,8 +6,8 @@ namespace review_leetcode {
 
     static void Main(string[] args) {
       
- 
       
+
     }
 
   }
