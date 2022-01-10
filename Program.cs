@@ -1,15 +1,14 @@
 ﻿using TwoPointers;
 
-namespace review_leetcode {
+namespace review_leetcode;
 
-  class Program {
+class Program {
 
-    static void Main(string[] args) {
-      
-      
+  static void Main(string[] args) {
 
-    }
+
 
   }
 
 }
+

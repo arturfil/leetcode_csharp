@@ -1,12 +1,9 @@
-namespace LinkedLists {
+namespace LinkedLists;
 
-    public class MergeKlists {
+public class MergeKlists {
 
-        public ListNode Merge(ListNode[] lists) {
-
-            return lists[0]; 
-        }
-
-    } 
+  public ListNode Merge(ListNode[] lists) {
+    return lists[0];
+  }
 
 }

@@ -1,14 +1,13 @@
-namespace Ints {
+namespace Ints;
 
-  public class PalindromeNumber {
+public class PalindromeNumber {
 
-    public bool IsPalindrome(int x) {
+  public bool IsPalindrome(int x) {
 
-      
+    
 
-      return false;
-    }
-
+    return false;
   }
 
 }
+

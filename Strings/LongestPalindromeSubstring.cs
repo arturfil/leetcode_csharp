@@ -1,77 +1,74 @@
 using System;
 
-namespace Strings {
+namespace Strings;
 
   public class LongestPalindromeSubstring {
 
-    public string LongestPalindrome(string s) {
-      if (string.IsNullOrEmpty(s)) return string.Empty;
+  public string LongestPalindrome(string s) {
+    if (string.IsNullOrEmpty(s)) return string.Empty;
 
-      string res = "";
-      int res_len = 0;
+    string res = "";
+    int res_len = 0;
 
-      for (int i = 0; i < s.Length; i++) {
-        var p1 = ExpandAroundCenter(s, i, i);
-        if (p1.Length > res_len) {
-          res_len = p1.Length;
-          res = p1;
-        }
-
-        var p2 = ExpandAroundCenter(s, i, i + 1);
-        if (p2.Length > res_len) {
-          res_len = p2.Length;
-          res = p2;
-        }
+    for (int i = 0; i < s.Length; i++) {
+      var p1 = ExpandAroundCenter(s, i, i);
+      if (p1.Length > res_len) {
+        res_len = p1.Length;
+        res = p1;
       }
 
-      return res;
-    }
-
-
-    private string ExpandAroundCenter(string s, int r, int l) {
-      while (r >= 0 && l < s.Length && s[r] == s[l]) {
-        r--;
-        l++;
+      var p2 = ExpandAroundCenter(s, i, i + 1);
+      if (p2.Length > res_len) {
+        res_len = p2.Length;
+        res = p2;
       }
-      return s.Substring(r + 1, l - r - 1);
     }
 
-    //:::::::::::::::::SOLUTION 2::::::::::::::::::::::::::::://
-
-    public string LongestPalindrome2(string s) {
-
-      if (string.IsNullOrEmpty(s)) return string.Empty;
-
-      int start = 0, end = 0;
-
-      for (int i = 0; i < s.Length; i++) {
-        int len1 = ExpandAroundCenter2(s, i, i);
-        int len2 = ExpandAroundCenter2(s, i, i + 1);
-        int len = Math.Max(len1, len2);
-
-        if (len > end - start) {
-          start = i - (len - 1) / 2;
-          end = i + len / 2;
-        }
-
-      }
-
-      return s.Substring(start, end - start + 1);
-    }
-
-
-    private int ExpandAroundCenter2(string s, int left, int right) {
-      int L = left, R = right;
-      while (L >= 0 && R < s.Length && s[L] == s[R]) {
-        R++;
-        L--;
-      }
-      return R - L - 1;
-    }
-    //:::::::::::::::::::::::::::::::::::::::::::::::::::::::://
-
+    return res;
   }
 
+
+  private string ExpandAroundCenter(string s, int r, int l) {
+    while (r >= 0 && l < s.Length && s[r] == s[l]) {
+      r--;
+      l++;
+    }
+    return s.Substring(r + 1, l - r - 1);
+  }
+
+  //:::::::::::::::::SOLUTION 2::::::::::::::::::::::::::::://
+
+  public string LongestPalindrome2(string s) {
+
+    if (string.IsNullOrEmpty(s)) return string.Empty;
+
+    int start = 0, end = 0;
+
+    for (int i = 0; i < s.Length; i++) {
+      int len1 = ExpandAroundCenter2(s, i, i);
+      int len2 = ExpandAroundCenter2(s, i, i + 1);
+      int len = Math.Max(len1, len2);
+
+      if (len > end - start) {
+        start = i - (len - 1) / 2;
+        end = i + len / 2;
+      }
+
+    }
+
+    return s.Substring(start, end - start + 1);
+  }
+
+
+  private int ExpandAroundCenter2(string s, int left, int right) {
+    int L = left, R = right;
+    while (L >= 0 && R < s.Length && s[L] == s[R]) {
+      R++;
+      L--;
+    }
+    return R - L - 1;
+  }
+  //:::::::::::::::::::::::::::::::::::::::::::::::::::::::://
 
 }
 
