@@ -10,8 +10,8 @@ public class ValidParenthesis {
   Stack<char> seen = new Stack<char>();
     for(int i = 0; i < s.Length; i++) {
       if (s[i] == '(') seen.Push(')');
-      if (s[i] == '{') seen.Push('}');
-      if (s[i] == '[') seen.Push(']');
+      else if (s[i] == '{') seen.Push('}');
+      else if (s[i] == '[') seen.Push(']');
       else if (seen.Count == 0 || s[i] != seen.Pop()) return false;
     }
     return seen.Count == 0;
