@@ -9,4 +9,11 @@ public class ListNode {
     this.next = next;
   }
 
+  public void printList(ListNode head) {
+    while(head != null) {
+      System.Console.Write($"{head.val} -> ");
+      head = head.next;
+    }
+  }
+
 }
