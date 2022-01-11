@@ -1,7 +1,5 @@
 ﻿using Arrays;
-using LinkedLists;
-using Stacks;
-using Strings;
+
 
 namespace review_leetcode;
 
@@ -9,10 +7,9 @@ class Program {
 
   static void Main(string[] args) {
 
-    var im = new ImplementStr();
-    string haystack = "hello";
-    string needle = "ll";
-    System.Console.WriteLine( im.StrStr("", "") );
+    int[] test = {-2,1,-3,4,-1,2,1,-5,4};
+    var max = new MaxSubArray();
+    System.Console.WriteLine( max.MaxSub(test) );
 
   }
 
