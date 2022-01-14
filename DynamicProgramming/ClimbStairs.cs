@@ -34,6 +34,4 @@ public class ClimbStairs {
   - If you notice this also follows the fibonacci sequence so you could also
     use an algorithm to emulate this sequence even thought we are technically 
     already taking it in account.
-  
-
 */
