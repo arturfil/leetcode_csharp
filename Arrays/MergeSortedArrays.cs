@@ -44,5 +44,4 @@ public class MergeSortedArrays {
   - opposite to this, place p2 all the way to the right.
   - repeat this process and you should get a ordered merged
     array in asc. order.
-
 */
