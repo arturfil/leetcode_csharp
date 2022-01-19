@@ -13,3 +13,11 @@
 /Users/arturofiliovilla/Documents/CS/leetcode/obj/Debug/net6.0/ref/review_leetcode.dll
 /Users/arturofiliovilla/Documents/CS/leetcode/obj/Debug/net6.0/review_leetcode.pdb
 /Users/arturofiliovilla/Documents/CS/leetcode/obj/Debug/net6.0/review_leetcode.genruntimeconfig.cache
+/Users/arturofiliovilla/Documents/CS/leetcode/bin/Debug/net6.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/arturofiliovilla/Documents/CS/leetcode/bin/Debug/net6.0/xunit.runner.reporters.netcoreapp10.dll
+/Users/arturofiliovilla/Documents/CS/leetcode/bin/Debug/net6.0/xunit.runner.utility.netcoreapp10.dll
+/Users/arturofiliovilla/Documents/CS/leetcode/bin/Debug/net6.0/xunit.abstractions.dll
+/Users/arturofiliovilla/Documents/CS/leetcode/bin/Debug/net6.0/xunit.assert.dll
+/Users/arturofiliovilla/Documents/CS/leetcode/bin/Debug/net6.0/xunit.core.dll
+/Users/arturofiliovilla/Documents/CS/leetcode/bin/Debug/net6.0/xunit.execution.dotnet.dll
+/Users/arturofiliovilla/Documents/CS/leetcode/obj/Debug/net6.0/review_leetcode.csproj.CopyComplete
