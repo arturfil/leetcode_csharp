@@ -43,6 +43,8 @@ public class InOrderTraversal {
   n1_L.right = n2_R;
   n2_R.right = n3_R;
 
+  inOrder.InOrder(root);
+
   EXPLANATION
   - You want to go all the way to the left and push all nodes along the way.
   - Using a stack will allow you to see the previous node InOrder traversal
