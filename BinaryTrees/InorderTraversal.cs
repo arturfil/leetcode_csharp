@@ -35,15 +35,14 @@ public class InOrderTraversal {
   TreeNode n3_R = new TreeNode(8);
 
   root.left = n1_L;
-  root.right = n1_R;
-  
   n1_L.left = n2_L;
   n2_L.left = n3_L;
-
+  
+  root.right = n1_R;
   n1_L.right = n2_R;
   n2_R.right = n3_R;
 
-  inOrder.InOrder(root);
+    inOrder.InOrder(root);
 
   EXPLANATION
   - You want to go all the way to the left and push all nodes along the way.
