@@ -8,34 +8,31 @@ class Program {
   static void Main(string[] args) {
 
 
-    TreeNode root = new TreeNode(1);
-    TreeNode n2_L = new TreeNode(2);
-    TreeNode n3_L = new TreeNode(3);
-    TreeNode n4_L = new TreeNode(4);
+    TreeNode root = new TreeNode(3);
+    TreeNode n2_L = new TreeNode(9);
     
-    TreeNode n2_R = new TreeNode(2);
-    TreeNode n3_R = new TreeNode(3);
-    TreeNode n4_R = new TreeNode(4);
+    TreeNode n2_R = new TreeNode(20);
+    TreeNode n3_R = new TreeNode(15);
+    TreeNode n4_R = new TreeNode(7);
 
     root.left = n2_L;
-    n2_L.left = n3_L;
-    n2_L.right = n4_L;
 
     root.right = n2_R;
-    n2_R.left = n4_R;
-    n2_R.right = n3_R;
+    n2_R.left = n3_R;
+    n2_R.right = n4_R;
 
     /*
-                 1
+                 3
               /     \
-             2        2
-           /   \    /   \
-          3     4  4     3
+             9       20
+                    /   \
+                   15    7
     */
     
-    var sym = new SymmetricTree();
-    bool result = sym.IsSymmetric(root);
+    var tree = new MaximumDepth();
+    int result = tree.MaxDepth(root); // should be 3;
     System.Console.WriteLine(result);
+
   
   }
 
