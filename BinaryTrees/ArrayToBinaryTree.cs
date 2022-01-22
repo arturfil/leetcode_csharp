@@ -23,3 +23,15 @@ public class ArrayToBinaryTree {
     return root;
   }
 }
+
+/*
+  TESTING
+  int[] treeArray = new int[] {-10, -3, 0, 5, 8};
+  var binTree = new ArrayToBinaryTree();
+  binTree.SortedArrayToBST(treeArray);
+
+  EXPLANATION
+  - You start assigning the middle or "root" node
+  and from there you assign new values using a recursive
+  function where that assigns the next value to the new nodes
+*/
