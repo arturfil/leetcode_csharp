@@ -10,10 +10,9 @@ class Program {
 
   static void Main(string[] args) {
 
-    int[] stockPrices = new int[] {7,1,5,3,6,4};
-    int[] stockPrices2 = new int[] {7,6,4,3,1};
-    var bestBuy = new BestTimeToBuySellStock();
-    bestBuy.MaxProfit(stockPrices2);
+    int[] test = {-2,1,-3,4,-1,2,1,-5,4};
+    var max = new MaxSubArray();
+    max.MaxSub(test);
   
   }
 
