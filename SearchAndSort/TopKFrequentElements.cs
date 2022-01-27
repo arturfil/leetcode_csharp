@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -6,16 +7,38 @@ namespace SearchAndSort;
 public class TopKFrequentElements {
   public int[] TopKFrequent(int[] nums, int k) {
     Dictionary<int, int> freq = new Dictionary<int, int>();
-    foreach(int num in nums) {
-      if (freq.ContainsKey(num)) freq[num]++;
-      else freq.Add(num, 1);
+    List<int> result = new List<int>();
+    int max = 0;
+
+    for(int i = 0; i < nums.Length; i++) {
+      if (!freq.ContainsKey(nums[i])) freq.Add(nums[i], 1);
+      else freq[nums[i]]++;
+      if (freq[nums[i]] > max) max = freq[nums[i]];
     }
 
-    foreach(KeyValuePair<int, int> kvp in freq) {
-      System.Console.WriteLine($"Key: {kvp.Key}, Value: {kvp.Value}");
+    Dictionary<int, List<int>> buckets = new Dictionary<int, List<int>>(max);
+    for (int i = 1; i <= max; i++) {
+      buckets.Add(i, new List<int>());
     }
 
-    return new int[] {1};
+    foreach(int key in freq.Keys) {
+      buckets[freq[key]].Add(key);
+    }
+
+    int last = max;
+
+    while (k > 0 && last > 0) {
+      int current = 0;
+      if (buckets[last].Count > 0) {
+        current = Math.Min(k, buckets[last].Count);
+        for(int i = 0; i < current; i++) {
+          result.Add(buckets[last][i]);
+        }
+      }
+      last--;
+      k -= current;
+    }
+    return result.ToArray();
   }
   
 }
