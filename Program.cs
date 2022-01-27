@@ -11,10 +11,8 @@ class Program {
 
   static void Main(string[] args) {
 
-    int[] test = new int[] {3,2,1,5,6,4}; 
-    int k = 2;
-    var largest = new KLargestElement();
-    largest.FindKthLargest(test, k);
+    var top = new TopKFrequentElements();
+    top.TopKFrequent(new int[] {1,1,1,2,3,3,3,3}, 2); // 1 & 3;
   
   }
 
