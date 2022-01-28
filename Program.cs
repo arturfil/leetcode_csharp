@@ -20,7 +20,7 @@ class Program {
 
         var reverse = new ReverseLinkedList();
         reverse.ReverseList(l1);
-        l1.printList(l1);
+        l1.printList(l1_6);
 
     }
 
