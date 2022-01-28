@@ -1,4 +1,5 @@
-﻿using LinkedLists;
+﻿using Graphs;
+using LinkedLists;
 
 namespace review_leetcode;
 
@@ -6,22 +7,20 @@ class Program {
 
     static void Main(string[] args) {
         
-        var l1 = new ListNode(1);
-        var l1_2 = new ListNode(3);
-        var l1_3 = new ListNode(4);
-        var l1_4 = new ListNode(5);
-        var l1_5 = new ListNode(7);
-        var l1_6 = new ListNode(8);
-        l1.next = l1_2;
-        l1_2.next = l1_3;
-        l1_3.next = l1_4;
-        l1_4.next = l1_5;
-        l1_5.next = l1_6;
-
-        var reverse = new ReverseLinkedList();
-        reverse.ReverseList(l1);
-        l1.printList(l1_6);
-
+        int[][] image1 = new int[][] {
+            new int[] {1,1,1},
+            new int[] {1,1,0},
+            new int[] {1,0,1}
+        };
+        var flood = new FloodFill();
+        flood.Fill(image1,1,1,2);
+        for(int i = 0; i < image1[0].Length; i++) {
+            System.Console.Write("{ ");
+            for (int j = 0; j < image1[i].Length; j++) {
+                System.Console.Write($"{image1[i][j]}, ");
+            }
+            System.Console.WriteLine("}");
+        }
     }
 
 }
