@@ -18,11 +18,11 @@ public class SquareRoot {
 }
 
 /*
-  Test
+  TEST
   var sqr = new SquareRoot();
   sqr.MySqrt(8);
 
-  Explanation
+  EXPLANATION
   To get the square root you need to make sure that 
   you substract every odd number until it reaches zero 
   or before it becomes negateive
