@@ -5,7 +5,7 @@ public class ReverseLinkedList {
         ListNode current = head;
         ListNode previous = null;
         
-        while(current.next != null) {
+        while(current != null) {
             ListNode nextTemp = current.next;
             current.next = previous;
             previous = current;
@@ -15,3 +15,10 @@ public class ReverseLinkedList {
         return previous;
     }
 }
+
+/*
+    TEST
+
+    EXPLANATION
+
+*/
