@@ -10,10 +10,15 @@ public class FloodFill {
     public void DFS(int[][] image, int r, int c, int color, int newColor) {
         if (image[r][c] == color) {
             image[r][c] = newColor;
-            if (r >= 1) DFS(image, r - 1, c, color, newColor);
-            if (c >= 1) DFS(image, r, c - 1, color, newColor);
-            if (r + 1 < image.Length) DFS(image, r + 1, c, color, newColor);
-            if (c + 1 < image[0].Length) DFS(image, r, c + 1, color, newColor);
+            // All these ifs are boundaries checks
+            // that index is valid for next row
+            if (r >= 1) DFS(image, r - 1, c, color, newColor); // up
+            // next index is valid for next column
+            if (c >= 1) DFS(image, r, c - 1, color, newColor); // left
+            // next row index is not larger than image length
+            if (r + 1 < image.Length) DFS(image, r + 1, c, color, newColor); // down
+            // next column is not larger than image lenght
+            if (c + 1 < image[0].Length) DFS(image, r, c + 1, color, newColor); // right
         }
     }
 }
