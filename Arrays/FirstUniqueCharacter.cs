@@ -19,3 +19,15 @@ public class FirstUniqueCharacter {
     }
 
 }
+
+/*
+    TESTING
+    var first = new FirstUniqueCharacter();
+    System.Console.WriteLine( first.FirstUnique("casacbri"));
+
+    EXPLANATION
+    - You add all the characters to the dictionary and the number of repetitions
+    - If they have '0' repetitions, means they are unique
+    - After adding all, run a for loop to see if the current, first character
+    has 0 repetitions, if so, return it
+*/
