@@ -1,19 +1,18 @@
 namespace BinaryTrees;
 
 public class SymmetricTree {
-  public bool IsSymmetric(TreeNode root) {
-    return IsMirror(root, root);
-  }
+    public bool IsSymmetric(TreeNode root) {
+        return IsMirror(root, root);
+    }
 
-  private bool IsMirror(TreeNode n1, TreeNode n2) {
-    if (n1 == null && n2 == null) return true;
-    if (n1 == null || n2 == null) return false;
-    
-    return (n1.val == n2.val) &&
-      IsMirror(n1.right, n2.left) &&
-      IsMirror(n1.left, n2.right);
-  }
+    private bool IsMirror(TreeNode n1, TreeNode n2) {
+        if (n1 == null && n2 == null) return true; // one case of symetry
+        if (n1 == null || n2 == null) return false; // false IF one or the other is null, not BOHT it's already accounted above
 
+        return (n1.val == n2.val) && // another case of symmetry
+          IsMirror(n1.right, n2.left) &&
+          IsMirror(n1.left, n2.right);
+    }
 }
 
 /*
