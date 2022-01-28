@@ -28,9 +28,9 @@ public class MeetingRooms {
     };
 
     EXPLANATION
-    - We are gong to try to track the starting time and the 
-    duration
-    - If one meeting has a start time that collides with another within the duration
+    - We are gong to try to track the starting and end time. 
+    - For this we need to sort the meetings by starting time.
+    - If one meeting has an endtime time that overlaps with the prevous
     we return false
     - otherwise we return true;
 */
