@@ -12,7 +12,6 @@ public class MergeTwoSortedLists {
             list2.next = MergeTwoLists(list1, list2.next);
             return list2;
         }
-
     }
 }
 

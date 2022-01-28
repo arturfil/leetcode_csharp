@@ -1,16 +1,20 @@
 ﻿using Graphs;
 using LinkedLists;
+using SearchAndSort;
 
 namespace review_leetcode;
 
 class Program {
 
     static void Main(string[] args) {
-        string[] lasers = new string[] {"011001","000000","010100","001000"}; // 8
-        string[] lasers2 = new string[] {"0001","010100","001000"}; // 4
+        int[][] meetings = new int[][] {
+            new int[] {0, 30},
+            new int[] {5, 10},
+            new int[] {15, 20}
+        };
 
-        var beams = new NumberOfLaserBeams();
-        beams.NumberOfBeams(lasers);
+        var meeting = new MeetingRooms();
+        meeting.CanAttendMeetings(meetings);
     }
 
 }
